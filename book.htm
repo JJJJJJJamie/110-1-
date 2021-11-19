@@ -26,8 +26,9 @@
 </center>   
     <!--超連結方式到誠品書局網站-->
 <center>
-<form action="https://www.books.com.tw/" method="get">
-<input type="text" name="p">
+<form action="https://search.books.com.tw/search/query/" name="search" id="search"  method="GET" onsubmit="if(typeof go_search == 'function'){go_search();return false;}">
+<input type="hidden" name="fclick" id="search_fclick" value="0" data-fkey="">
+<input type="search" class="search_key" accesskey="S" name="key" id="key" value="" message ="請輸入關鍵字" autocomplete="off">
 <input type="submit" value="查詢">
 </center>
 </h1>	
